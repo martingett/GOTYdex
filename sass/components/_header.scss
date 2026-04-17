@@ -1,0 +1,62 @@
+@use "../utilities/variables" as v;
+
+header {
+    .navbar {
+        background-image: url("../assets/Background.webp");
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+    }
+
+    .container-fluid {
+        .img_nav {
+            height: 60px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .navbar-nav {
+            background-color: transparent;
+            font-size: 2rem;
+            display: flex;
+
+            .nav-link.active {
+                color: v.$color3;
+                font-family: v.$fuente2, sans-serif;
+                border-bottom: 2px solid v.$color3;
+            }
+
+            .nav-link {
+                color: #ffffff;
+                font-family: v.$fuente2, sans-serif;
+                font-weight: 200;
+                letter-spacing: 6px;
+                text-transform: uppercase;
+                transition: all 0.3s ease;
+                background-color: #0000006b;
+                padding: 10px 15px;
+                border-top: 1px solid #e2c05f33;
+                border-bottom: 1px solid #e2c05f33;
+                width: auto;
+            }
+        }
+    }
+
+    .web1 {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 2000;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .img_pag1 {
+            height: 13vh;
+            width: auto;
+        }
+    }
+}

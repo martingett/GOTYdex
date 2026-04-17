@@ -1,0 +1,10 @@
+@use "../utilities/variables" as v;
+
+main {
+    .carousel-item img {
+        object-fit: contain;
+        max-height: 70vh;
+        padding: 20px;
+        background-color: v.$color2;
+    }
+}

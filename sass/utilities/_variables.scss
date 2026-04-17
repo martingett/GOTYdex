@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+$fuente1: space grotesk;
+$fuente2: Exo 2;
+$color1: #1f1e29;
+$color2: #6d607410;
+$color3: #e2c05f;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fuente1;
+}
