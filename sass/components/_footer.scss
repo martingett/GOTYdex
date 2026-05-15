@@ -1,4 +1,5 @@
 @use "../utilities/variables" as v;
+@use "../utilities/mixings" as m;
 
 
 .text_footer1 {
@@ -27,6 +28,34 @@
 
         &:hover {
             transform: scale(1.1);
+        }
+    }
+}
+
+@include m.mobile {
+    .text_footer1 {
+        font-size: 1.5rem;
+    }
+
+    .redes_footer1 {
+        .img_footer1 {
+            width: 20vw;
+        }
+    }
+}
+
+@include m.tablet {
+    .redes_footer1 {
+        .img_footer1 {
+            width: 15vw;
+        }
+    }
+}
+
+@include m.laptop {
+    .redes_footer1 {
+        .img_footer1 {
+            width: 12vw;
         }
     }
 }

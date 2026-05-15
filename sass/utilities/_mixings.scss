@@ -31,3 +31,20 @@
     padding: 25px;
 }
 
+@mixin mobile {
+    @media (min-width: 320px) and (max-width: 767px) {
+        @content
+    }
+}
+
+@mixin tablet {
+    @media (min-width:768px) and (max-width: 1023px) {
+        @content
+    }
+}
+
+@mixin laptop {
+    @media (min-width:1024px) and (max-width:1439px) {
+        @content
+    }
+}
